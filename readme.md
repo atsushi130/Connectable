@@ -70,7 +70,7 @@ final class GithubViewController: UIViewController {
             .disposed(by: self.disposeBag)
 
         // self.viewModel.out.*
-        self.viewModel.out.searched.subscribe(onNext: { repositories inp
+        self.viewModel.out.searched.subscribe(onNext: { repositories in
             print(repositories)
         }).disposed(by: self.disposeBag)
     }
