@@ -64,10 +64,12 @@ final class GithubViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // self.viewModel.in.*
         self.textField.rx.text.asObservable()
             .bind(to: self.viewModel.in.searchText)
             .disposed(by: self.disposeBag)
 
+        // self.viewModel.out.*
         self.viewModel.out.searched.subscribe(onNext: { repositories inp
             print(repositories)
         }).disposed(by: self.disposeBag)
