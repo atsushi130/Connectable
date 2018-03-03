@@ -10,6 +10,9 @@
 		0DEFE037204A9429007932D2 /* Connectable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEFE02D204A9429007932D2 /* Connectable.framework */; };
 		0DEFE03C204A9429007932D2 /* ConnectableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFE03B204A9429007932D2 /* ConnectableTests.swift */; };
 		0DEFE03E204A9429007932D2 /* Connectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DEFE030204A9429007932D2 /* Connectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DEFE048204A943E007932D2 /* Connectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFE047204A943E007932D2 /* Connectable.swift */; };
+		0DEFE04A204A9447007932D2 /* Inputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFE049204A9447007932D2 /* Inputable.swift */; };
+		0DEFE04C204A9451007932D2 /* Outputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFE04B204A9451007932D2 /* Outputable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		0DEFE036204A9429007932D2 /* ConnectableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConnectableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEFE03B204A9429007932D2 /* ConnectableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectableTests.swift; sourceTree = "<group>"; };
 		0DEFE03D204A9429007932D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DEFE047204A943E007932D2 /* Connectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectable.swift; sourceTree = "<group>"; };
+		0DEFE049204A9447007932D2 /* Inputable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inputable.swift; sourceTree = "<group>"; };
+		0DEFE04B204A9451007932D2 /* Outputable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outputable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 			children = (
 				0DEFE030204A9429007932D2 /* Connectable.h */,
 				0DEFE031204A9429007932D2 /* Info.plist */,
+				0DEFE047204A943E007932D2 /* Connectable.swift */,
+				0DEFE049204A9447007932D2 /* Inputable.swift */,
+				0DEFE04B204A9451007932D2 /* Outputable.swift */,
 			);
 			path = Connectable;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					0DEFE02C204A9429007932D2 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					0DEFE035204A9429007932D2 = {
@@ -196,6 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DEFE04C204A9451007932D2 /* Outputable.swift in Sources */,
+				0DEFE04A204A9447007932D2 /* Inputable.swift in Sources */,
+				0DEFE048204A943E007932D2 /* Connectable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +347,7 @@
 		0DEFE042204A9429007932D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.atsushi130.Connectable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +370,7 @@
 		0DEFE043204A9429007932D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +392,7 @@
 		0DEFE045204A9429007932D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7SYG4Q97TY;
 				INFOPLIST_FILE = ConnectableTests/Info.plist;
@@ -390,6 +407,7 @@
 		0DEFE046204A9429007932D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7SYG4Q97TY;
 				INFOPLIST_FILE = ConnectableTests/Info.plist;
