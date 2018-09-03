@@ -9,7 +9,7 @@
 import Foundation
 
 public struct OutputSpace<Definer> {
-    let definer: Definer
+    public let definer: Definer
     init(_ definer: Definer) {
         self.definer = definer
     }
