@@ -27,7 +27,7 @@ final class GithubViewModel: Connectable {
 
     init() {
         self.searchText.asObservable()
-            .map { GithubApi.shared.searched(by: $0) }
+            .flatMapLatest { GithubApi.shared.searched(by: $0) }
             .bind(to: self.searched)
             .disposed(by: self.disposeBag)
     }
@@ -59,7 +59,6 @@ final class GithubViewController: UIViewController {
 
     private let viewModel  = GithubViewModel()
     private let disposeBag = DisposeBag()
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
