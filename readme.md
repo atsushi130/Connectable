@@ -6,7 +6,7 @@
 
 <p align="center">
     <a href="https://github.com/atsushi130/Connectable.git"><img src="https://img.shields.io/badge/Swift-Connectable-3B5998.svg"></a> 
-    <img src="https://img.shields.io/badge/Swift-4-ffac45.svg">
+    <img src="https://img.shields.io/badge/Swift-4.2-ffac45.svg">
     <img src="https://img.shields.io/badge/License-MIT-d94c32.svg">
 </p>
 
